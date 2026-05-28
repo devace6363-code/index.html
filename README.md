@@ -1,19 +1,18 @@
-# index.html
 
+
+```html
 <!DOCTYPE html>
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DEVICE — Магазин техніки</title>
+<title>DEVICE STORE</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -22,25 +21,25 @@ box-sizing:border-box;
 
 body{
 font-family:'Montserrat',sans-serif;
-background:#f4f7fb;
+background:#f3f7ff;
 color:#111;
 }
 
 header{
-background:#0057ff;
-padding:18px 40px;
+position:sticky;
+top:0;
+z-index:999;
 display:flex;
 justify-content:space-between;
 align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+padding:18px 40px;
+background:#0057ff;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 .logo{
-font-size:32px;
-font-weight:700;
+font-size:34px;
+font-weight:800;
 color:white;
 }
 
@@ -50,8 +49,8 @@ gap:25px;
 }
 
 nav a{
-color:white;
 text-decoration:none;
+color:white;
 font-weight:600;
 transition:0.3s;
 }
@@ -62,65 +61,71 @@ opacity:0.7;
 
 .hero{
 background:linear-gradient(135deg,#0057ff,#00a2ff);
-padding:100px 20px;
+min-height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
+padding:40px 20px;
 color:white;
 }
 
 .hero h1{
-font-size:64px;
+font-size:72px;
 margin-bottom:20px;
+font-weight:800;
 }
 
 .hero p{
-font-size:22px;
+font-size:24px;
 max-width:700px;
-margin:auto;
 line-height:1.6;
-margin-bottom:30px;
+margin-bottom:35px;
 }
 
 .hero button{
 background:white;
 color:#0057ff;
 border:none;
-padding:16px 32px;
-border-radius:14px;
+padding:18px 35px;
 font-size:18px;
 font-weight:700;
+border-radius:16px;
 cursor:pointer;
 transition:0.3s;
 }
 
 .hero button:hover{
-transform:translateY(-3px);
+transform:translateY(-5px);
 }
 
 .section-title{
 text-align:center;
-font-size:38px;
-margin:60px 0 30px;
+font-size:42px;
+margin:70px 0 40px;
+font-weight:800;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
-padding:20px 40px 60px;
+padding:0 40px 80px;
 }
 
 .card{
 background:white;
-border-radius:24px;
+border-radius:28px;
 padding:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 transition:0.3s;
-overflow:hidden;
 position:relative;
+overflow:hidden;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
 .badge{
@@ -129,34 +134,34 @@ top:15px;
 left:15px;
 background:#ff3d3d;
 color:white;
-padding:8px 14px;
-border-radius:30px;
-font-size:14px;
+padding:8px 16px;
+border-radius:50px;
+font-size:13px;
 font-weight:700;
 }
 
 .card img{
 width:100%;
-height:240px;
+height:250px;
 object-fit:cover;
-border-radius:18px;
+border-radius:20px;
 margin-bottom:20px;
 }
 
 .card h2{
-font-size:24px;
-margin-bottom:10px;
+font-size:28px;
+margin-bottom:12px;
 }
 
 .card p{
 color:#666;
 line-height:1.5;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 .price{
-font-size:28px;
-font-weight:700;
+font-size:30px;
+font-weight:800;
 color:#0057ff;
 margin-bottom:20px;
 }
@@ -166,8 +171,8 @@ width:100%;
 background:#0057ff;
 color:white;
 border:none;
-padding:15px;
-border-radius:14px;
+padding:16px;
+border-radius:16px;
 font-size:17px;
 font-weight:700;
 cursor:pointer;
@@ -175,7 +180,7 @@ transition:0.3s;
 }
 
 .buy-btn:hover{
-background:#003ed6;
+background:#003fd1;
 }
 
 .telegram{
@@ -185,18 +190,17 @@ bottom:20px;
 background:#0088cc;
 color:white;
 text-decoration:none;
-padding:15px 22px;
+padding:16px 24px;
 border-radius:50px;
 font-weight:700;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 footer{
 background:#111827;
 color:white;
-padding:30px;
+padding:35px;
 text-align:center;
-margin-top:30px;
 }
 
 @media(max-width:768px){
@@ -204,7 +208,7 @@ margin-top:30px;
 header{
 flex-direction:column;
 gap:15px;
-padding:15px 20px;
+padding:18px 20px;
 }
 
 nav{
@@ -213,7 +217,7 @@ justify-content:center;
 }
 
 .hero h1{
-font-size:42px;
+font-size:48px;
 }
 
 .hero p{
@@ -221,9 +225,8 @@ font-size:18px;
 }
 
 .products{
-padding:20px;
+padding:0 20px 60px;
 }
-
 }
 
 </style>
@@ -232,7 +235,6 @@ padding:20px;
 <body>
 
 <header>
-
 <div class="logo">DEVICE</div>
 
 <nav>
@@ -241,19 +243,14 @@ padding:20px;
 <a href="#">Акції</a>
 <a href="#">Контакти</a>
 </nav>
-
 </header>
 
 <section class="hero">
-
 <h1>DEVICE STORE</h1>
-
 <p>
-Сучасний магазин техніки, смартфонів, ноутбуків та аксесуарів за вигідними цінами.
+Сучасний магазин смартфонів, ноутбуків, навушників та гаджетів.
 </p>
-
-<button>Перейти до каталогу</button>
-
+<button>Перейти в каталог</button>
 </section>
 
 <h2 class="section-title">Популярні товари</h2>
@@ -261,68 +258,42 @@ padding:20px;
 <section class="products">
 
 <div class="card">
-
 <div class="badge">ТОП</div>
-
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="iPhone">
-
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="iPhone">
 <h2>iPhone 15 Pro</h2>
-
-<p>
-Потужний смартфон Apple з преміальним дизайном та топовою камерою.
-</p>
-
+<p>Флагманський смартфон Apple з потужною камерою та преміальним дизайном.</p>
 <div class="price">39 999 ₴</div>
-
 <button class="buy-btn">Купити</button>
-
 </div>
 
 <div class="card">
-
 <div class="badge">ЗНИЖКА</div>
-
-<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" alt="Laptop">
-
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80" alt="Laptop">
 <h2>Gaming Laptop</h2>
-
-<p>
-Ігровий ноутбук для максимального FPS та швидкої роботи.
-</p>
-
+<p>Потужний ноутбук для ігор, монтажу та швидкої роботи.</p>
 <div class="price">54 999 ₴</div>
-
 <button class="buy-btn">Купити</button>
-
 </div>
 
 <div class="card">
-
 <div class="badge">NEW</div>
-
-<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Headphones">
-
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Headphones">
 <h2>AirPods Max</h2>
-
-<p>
-Преміальні навушники з потужним шумопоглинанням.
-</p>
-
+<p>Преміальні навушники з якісним шумопоглинанням.</p>
 <div class="price">12 499 ₴</div>
-
 <button class="buy-btn">Купити</button>
-
 </div>
 
 </section>
 
-<a class="telegram" href="https://t.me/yourchannel" target="_blank">
+<a class="telegram" href="https://t.me/device_shop" target="_blank">
 Telegram
 </a>
 
 <footer>
-© 2026 DEVICE — Всі права захищені
+© 2026 DEVICE STORE — Всі права захищені
 </footer>
 
 </body>
 </html>
+```
