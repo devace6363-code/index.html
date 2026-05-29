@@ -1,4 +1,23 @@
 
+color:white;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+opacity:0.7;
+}
+
 
 ```html
 <!DOCTYPE html>
@@ -40,25 +59,6 @@ box-shadow:0 4px 15px rgba(0,0,0,0.1);
 .logo{
 font-size:34px;
 font-weight:800;
-color:white;
-}
-
-nav{
-display:flex;
-gap:25px;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-font-weight:600;
-transition:0.3s;
-}
-
-nav a:hover{
-opacity:0.7;
-}
-
 .hero{
 background:linear-gradient(135deg,#0057ff,#00a2ff);
 min-height:85vh;
